@@ -1,0 +1,45 @@
+.page.about {
+  .techweek {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      width: 450px;
+      margin-top: 60px;
+    }
+
+    .image {
+      width: 450px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .keydates {
+    .dates {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: $spacer;
+
+      .date {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 25%;
+        border-right: 1px dashed $secondary;
+
+        &:last-of-type {
+          border-right: none;
+        }
+
+        h4 {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

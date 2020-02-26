@@ -1,0 +1,163 @@
+.home {
+  .banner {
+    height: 100vh;
+    position: fixed;
+    transition-delay: 1s;
+    pointer-events: none;
+    background-image: none;
+
+    nav {
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      height: 155px;
+    }
+
+    .brand {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // max-width: 550px;
+      width: 90vw;
+      max-width: 90vw;
+      animation-direction: reverse;
+      pointer-events: none;
+
+      @media screen and (min-width: 700px) {
+        width: 550px;
+      }
+
+      svg {
+        width: 100%;
+        animation: fadegrowenter 3s;
+      }
+    }
+  }
+
+  .hero {
+    // transition: height 1.5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: height 1.5s ease;
+
+    canvas {
+      opacity: 1;
+      transition: opacity 2s ease;
+    }
+  }
+
+  &.loaded {
+    transition: height 0s 2s linear;
+  }
+
+  .wrap.container {
+    margin-top: 100vh;
+  }
+
+  &.scrolled {
+    .hero {
+      height: 155px;
+
+      canvas {
+        opacity: 0;
+      }
+
+      .instruct {
+        opacity: 0;
+      }
+    }
+
+    .banner {
+      height: 100vh;
+
+      .brand {
+        animation: logomove 1s;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        margin-left: 10px;
+        transform: none;
+        width: 190px;
+      }
+
+      nav {
+        opacity: 1;
+        transition: 1s;
+        transition-timing-function: ease;
+        transition-delay: 1s;
+        pointer-events: all;
+      }
+    }
+
+    .wrap.container {
+      // margin-top: 155px !important;
+      &::before {
+        position: absolute;
+        height: 100vh;
+        content: "";
+        display: block;
+      }
+    }
+  }
+
+  .main {
+    margin: 1rem 0;
+
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      margin: 0.4rem 0 5rem;
+      color: #000;
+      font-family: myriad-pro, sans-serif;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 3fr 5fr;
+      grid-column-gap: 4rem;
+
+      @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 2rem;
+        padding: 0 2rem;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      align-self: center;
+    }
+
+    p {
+      align-self: center;
+    }
+  }
+}
+
+@keyframes logomove {
+  0% {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+  }
+
+  100% {
+    top: 0%;
+    left: 0;
+    transform: none;
+    margin-top: 0;
+    margin-left: 10px;
+    width: 190px;
+  }
+}
