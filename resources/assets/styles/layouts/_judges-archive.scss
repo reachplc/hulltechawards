@@ -1,0 +1,44 @@
+.archive-judges-data {
+  .judges-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    @media screen and (min-width: 700px) {
+      grid-gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 900px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .judges {
+      width: 100%;
+      background-color: #e5e5e5;
+      box-sizing: border-box;
+      padding: 1.5rem 2rem;
+      border-radius: 5px;
+
+      img {
+        width: 220px;
+        height: 220px;
+        object-fit: contain;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+
+      h2 {
+        margin: 10px 0 20px;
+        color: #ee5b04;
+      }
+
+      p {
+        margin: 0;
+        font-size: 16px;
+      }
+    }
+  }
+}

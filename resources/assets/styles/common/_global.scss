@@ -23,3 +23,16 @@ main {
 html {
   height: 100%;
 }
+
+.modal-wrapper.styled .modal {
+  border: none !important;
+  width: 80%;
+
+  @media screen and (min-width: 800px) {
+    width: 60%;
+  }
+}
+
+.modal-wrapper.styled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
