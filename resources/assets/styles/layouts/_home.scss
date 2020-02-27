@@ -55,6 +55,7 @@
 
   .wrap.container {
     margin-top: 100vh;
+    transition: margin 1.5s ease;
   }
 
   &.scrolled {
@@ -93,13 +94,7 @@
     }
 
     .wrap.container {
-      // margin-top: 155px !important;
-      &::before {
-        position: absolute;
-        height: 100vh;
-        content: "";
-        display: block;
-      }
+      margin-top: 155px !important;
     }
   }
 
