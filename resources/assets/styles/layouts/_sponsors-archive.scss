@@ -1,0 +1,41 @@
+.archive-sponsors-data {
+  .archive-sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+    @media screen and (min-width: 800px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    a {
+      text-decoration: none;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      h4 {
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+  }
+
+  #modal-content {
+    img {
+      margin-top: 80px;
+    }
+
+    a {
+      color: #fff;
+      margin: 10px 0;
+      display: block;
+    }
+  }
+
+  .footer-sponsors {
+    display: none;
+  }
+}
