@@ -10,9 +10,17 @@
     {!! get_search_form(false) !!}
   @endif
 
-  @while (have_posts()) @php the_post() @endphp
-    @include('partials.content-'.get_post_type())
-  @endwhile
-
-  {!! get_the_posts_navigation() !!}
+  <div class="news-grid">
+    @while (have_posts()) @php the_post() @endphp
+      <a class="news" href="{{get_field('url')}}" target="_blank">
+          <div class="image">
+            {{the_post_thumbnail()}}
+          </div>
+          <div class="inner-content">
+            <h2 class="entry-title">{!! get_the_title() !!}</h2>
+            <h3>{!! get_field('subheading') !!}</h3>
+          </div>
+      </a>
+    @endwhile
+  </div>
 @endsection

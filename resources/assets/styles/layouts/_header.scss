@@ -108,6 +108,21 @@ header.banner {
           padding: 0 15px;
           position: relative;
 
+          &.menu-item-has-children {
+            margin-right: 10px;
+
+            &::after {
+              content: "⌄";
+              position: absolute;
+              top: 0;
+              right: -5px;
+              font-size: 1.5rem;
+              line-height: 0.5;
+              color: #fff;
+              transform: scaleY(0.8);
+            }
+          }
+
           &::before {
             content: "";
             position: absolute;
@@ -184,6 +199,16 @@ header.banner {
         }
       }
 
+    }
+
+    @media screen and (min-width: 850px) {
+      ul {
+        margin: 0;
+
+        li:last-of-type {
+          padding-right: 0;
+        }
+      }
     }
   }
 }
