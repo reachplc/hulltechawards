@@ -29,9 +29,13 @@ footer {
         padding-left: 0;
       }
 
+      // .sub-menu {
+      //   margin-left: 0.4rem;
+      // }
+
       li {
         display: inline-block;
-        margin: 0 0.4rem;
+        margin: 0 0.4rem 0 0;
 
         @media screen and (max-width: 800px) {
           margin: 0 0.5rem 0 0;
@@ -43,6 +47,14 @@ footer {
           font-weight: 600;
           color: #fff;
           font-size: 0.9rem;
+        }
+      }
+
+      .menu-item-has-children {
+        margin: 0 0 0 0;
+
+        & > a {
+          margin: 0 0.4rem 0 0;
         }
       }
     }

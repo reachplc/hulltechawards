@@ -1,0 +1,42 @@
+.page-contact-data {
+  p {
+    text-align: center;
+  }
+
+  .card {
+    width: 300px;
+    background-color: #e5e5e5;
+    box-sizing: border-box;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    margin: 50px auto 0;
+
+    img {
+      width: 220px;
+      height: 220px;
+      object-fit: contain;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+    }
+
+    h2 {
+      margin: 10px 0 20px;
+      color: #000;
+      text-align: left;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      text-align: left;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 800;
+      }
+    }
+  }
+}
