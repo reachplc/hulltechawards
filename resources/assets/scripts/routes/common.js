@@ -5,10 +5,13 @@ export default {
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
     const pageBody = document.getElementsByTagName('body')[0];
+    const nav = document.querySelector('.nav-primary');
 
     window.addEventListener('scroll', () => {
       console.log(pageYOffset)
-      if (pageYOffset > 10) {
+
+      if (pageYOffset > nav.offsetTop) {
+        pageBody.classList.add('scrolled');
         pageBody.classList.add('scrolled');
       } else {
         pageBody.classList.remove('scrolled');
@@ -18,11 +21,6 @@ export default {
         pageBody.classList.add('loaded');
       }, 500);
     })
-
-    if(pageYOffset > 10) {
-      console.log(pageYOffset)
-      pageBody.classList.add('scrolled');
-    }
 
     $('.opennav').on('click', () => {
       $('.navbar').toggleClass('mob-open');

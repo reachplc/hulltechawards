@@ -1,7 +1,7 @@
 .home {
   .banner {
     height: 100vh;
-    position: fixed;
+    // position: fixed;
     transition-delay: 1s;
     pointer-events: none;
     background-image: none;
@@ -54,7 +54,7 @@
   }
 
   .wrap.container {
-    margin-top: 100vh;
+    margin-top: 155px;
     transition: margin 1.5s ease;
   }
 
@@ -94,7 +94,7 @@
     }
 
     .wrap.container {
-      margin-top: 155px !important;
+      // color: red;
     }
   }
 
