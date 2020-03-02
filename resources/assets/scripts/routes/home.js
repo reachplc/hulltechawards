@@ -5,13 +5,18 @@ export default {
     // JavaScript to be fired on the home page
   },
   finalize() {
-    const scroll = document.getElementById('scroll');
+    const scroll = document.getElementById("scroll");
 
-    particlesJS.load('particlelayer', '/wp-content/themes/sage/resources/assets/partconfig.json', () => {});
+    particlesJS.load(
+      "particlelayer",
+      "/wp-content/themes/sage/resources/assets/partconfig.json",
+      () => {}
+    );
 
-    scroll.addEventListener('click', () => {
+    scroll.addEventListener("click", () => {
+      console.log("sjfhsdf");
       // window.scrollTo(0, 155);
+      document.getElementsByTagName("body")[0].classList.add("scrolled");
     });
-
   }
 };
