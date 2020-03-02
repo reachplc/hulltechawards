@@ -26,7 +26,14 @@
     <h1>{{$home['heading']}}</h1>
     <h2>{{$dates['event']}} / {{$home['venue']}}</h2>
     <div class="intro">
-      {!!wp_get_attachment_image( $home['partnership_logo'], 'full')!!}
+     <div class="partnership-logo">
+      <a href="<?php echo $home['partnership_url_1']; ?>" target="_blank">
+        {!!wp_get_attachment_image( $home['partnership_logo'], 'full')!!}
+      </a>
+      <a href="<?php echo $home['partnership_url_2']; ?>" target="_blank">
+        {!!wp_get_attachment_image( $home['partnership_logo_2'], 'full')!!}
+      </a>
+     </div>
       <p>{{$home['intro_text']}}</p>
     </div>
   @endwhile

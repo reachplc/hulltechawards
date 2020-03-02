@@ -15,7 +15,7 @@ export default {
 
     scroll.addEventListener("click", () => {
       console.log("sjfhsdf");
-      // window.scrollTo(0, 155);
+
       document.getElementsByTagName("body")[0].classList.add("scrolled");
     });
   }

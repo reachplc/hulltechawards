@@ -6,7 +6,7 @@
         $args = array(
           'post_type'=> 'sponsors',
           'post_status' => 'publish',
-          'posts_per_page' => -1
+          'posts_per_page' => 5
           );
         $sponsor_query = new WP_Query( $args );
       @endphp
@@ -16,7 +16,7 @@
           @php
             $link = get_the_permalink();
           @endphp
-          <a class="sponsor" href="{{$link}}">
+          <a class="sponsor" href="{{$link}}" target="_blank">
             {{the_post_thumbnail()}}
           </a>
         @endwhile

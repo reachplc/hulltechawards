@@ -59,6 +59,8 @@
   }
 
   &.scrolled {
+    transition: margin 1.5s ease;
+
     .hero {
       height: 155px;
 
@@ -94,7 +96,7 @@
     }
 
     .wrap.container {
-      margin-top: 155px;
+      margin-top: 0 !important;
     }
   }
 
@@ -131,6 +133,11 @@
       max-width: 100%;
       height: auto;
       align-self: center;
+    }
+
+    .partnership-logo img {
+      width: 300px;
+      margin-bottom: 20px;
     }
 
     p {
