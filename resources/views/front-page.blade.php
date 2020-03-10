@@ -4,7 +4,7 @@
   <div class="hero" id="particlelayer" style="background-image: url('@asset('images/hero.jpg')');">
     <div class="hero__body">
       {{-- <img id='loadlogo' src="@asset('images/logo.png')" /> --}}
-      {{-- <h2>The Humber Region's principal Tech Awards</h2> --}}
+      {{-- <h2>The region's leading tech awards</h2> --}}
     </div>
     <div id="scroll" class="instruct">
       <div class="arrow">
@@ -26,15 +26,17 @@
     <h1>{{$home['heading']}}</h1>
     <h2>{{$dates['event']}} / {{$home['venue']}}</h2>
     <div class="intro">
+      <p>{{$home['intro_text']}}</p>
      <div class="partnership-logo">
       <a href="<?php echo $home['partnership_url_1']; ?>" target="_blank">
         {!!wp_get_attachment_image( $home['partnership_logo'], 'full')!!}
       </a>
+      <h3 class="partnership-heading">Strategic Partner</h3>
       <a href="<?php echo $home['partnership_url_2']; ?>" target="_blank">
         {!!wp_get_attachment_image( $home['partnership_logo_2'], 'full')!!}
       </a>
      </div>
-      <p>{{$home['intro_text']}}</p>
+
     </div>
   @endwhile
 @endsection
