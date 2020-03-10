@@ -1,6 +1,6 @@
 <div class="footer-sponsors">
   <div class="container">
-    <h4 class="title">2020 Sponsors</h4>
+    <h4 class="title"><span>Strategic Partner</span>2020 Sponsors</h4>
     <div class="sponsor-grid">
       @php
         $args = array(

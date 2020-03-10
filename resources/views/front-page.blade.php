@@ -24,7 +24,7 @@
         $home = get_field('homepage', 'option');
       @endphp
     <h1>{{$home['heading']}}</h1>
-    <h2>{{$dates['event']}} / {{$home['venue']}}</h2>
+    <h2>{{$dates['event']}} | {{$home['venue']}}</h2>
     <div class="intro">
       <p>{{$home['intro_text']}}</p>
      <div class="partnership-logo">

@@ -6,6 +6,19 @@
     text-transform: uppercase;
     font-size: 2rem;
     margin: 0 0 3rem 0;
+    position: relative;
+
+    span {
+      position: absolute;
+      left: 0;
+      font-size: 20px;
+      color: black;
+
+      @media screen and (max-width: 800px) {
+        position: relative;
+        display: block;
+      }
+    }
   }
 
   .sponsor-grid {
