@@ -1,7 +1,12 @@
 @extends('layouts.app')
 
 @section('hero')
-  <div class="hero" id="particlelayer" style="background-image: url('@asset('images/hero.jpg')');">
+  <div class="hero" id="particlelayer">
+
+    <video autoplay loop id="video-background" muted plays-inline>
+      <source src="http://reachcreativestudio.com/storage/techawardshumber/overall-main-logo-sequence.mp4" type="video/mp4">
+    </video>
+
     <div class="hero__body">
       {{-- <img id='loadlogo' src="@asset('images/logo.png')" /> --}}
       {{-- <h2>The region's leading tech awards</h2> --}}

@@ -5,7 +5,8 @@ header.banner {
   right: 0;
   top: 0;
   z-index: 10;
-  background-image: url("../images/header.jpg");
+  // background-image: url("../images/header.jpg");
+  background: linear-gradient(90deg, #e82681, #ee5b04) !important;
   background-size: cover;
   background-repeat: no-repeat;
 
