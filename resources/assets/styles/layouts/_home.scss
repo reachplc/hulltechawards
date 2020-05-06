@@ -26,10 +26,6 @@
       animation-direction: reverse;
       pointer-events: none;
 
-      // @media screen and (min-width: 700px) {
-      //   width: 550px;
-      // }
-
       svg {
         width: 0%;
         animation: fadegrowenter 3s;
@@ -43,6 +39,19 @@
     left: 0;
     right: 0;
     transition: height 1.5s ease;
+
+    &__sponsor {
+      filter: invert(1);
+      text-align: center;
+
+      img {
+        width: 115px;
+
+        @media screen and (min-width: 1000px) {
+          width: 200px;
+        }
+      }
+    }
 
     canvas {
       opacity: 1;
@@ -82,6 +91,10 @@
 
       .instruct {
         opacity: 0;
+      }
+
+      &__body {
+        display: none;
       }
     }
 

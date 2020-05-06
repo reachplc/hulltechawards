@@ -1,15 +1,17 @@
 @extends('layouts.app')
 
 @section('hero')
-  <div class="hero" id="particlelayer">
-
-    <video autoplay loop id="video-background" muted plays-inline>
-      <source src="http://reachcreativestudio.com/storage/techawardshumber/overall-main-logo-sequence.mp4" type="video/mp4">
-    </video>
+  <div class="hero" id="particlelayer" style="background-image: url('@asset('images/hero.jpg')');">
 
     <div class="hero__body">
-      {{-- <img id='loadlogo' src="@asset('images/logo.png')" /> --}}
-      {{-- <h2>The region's leading tech awards</h2> --}}
+    <div class="hero__logo">
+      @php (include App\svg_path('images/logo.svg')) @endphp
+    </div>
+      <h2>The region's leading tech awards</h2>
+      <h3>Strategic Partner</h3>
+        <div class="hero__sponsor">
+          <img src="http://www.techawardshumber.com/wp-content/uploads/2020/03/gb-recuitment.png" alt="">
+        </div>
     </div>
     <div id="scroll" class="instruct">
       <div class="arrow">
