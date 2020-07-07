@@ -1,23 +1,19 @@
 .blog {
   .news-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-
-    @media screen and (min-width: 700px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media screen and (min-width: 900px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    margin-top: 40px;
 
     a.news {
       display: block;
-      width: 100%;
+      width: 23%;
       position: relative;
       height: 500px;
+      margin-left: 1%;
+      margin-right: 1%;
+      margin-bottom: 20px;
 
       .image {
         position: absolute;
