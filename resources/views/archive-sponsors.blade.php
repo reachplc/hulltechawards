@@ -43,8 +43,8 @@
     </div>
   </div>
 
-  <a  target="_blank" href="@asset('../mediapack.pdf')" class="btn">
-  Become a sponsor
+  <a href="/contact" class="btn">
+    Become a sponsor
   </a>
 
   {!! get_the_posts_navigation() !!}

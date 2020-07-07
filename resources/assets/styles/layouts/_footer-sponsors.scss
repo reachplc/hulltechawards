@@ -4,14 +4,14 @@
   h4.title {
     text-align: center;
     text-transform: uppercase;
-    font-size: 2rem;
-    margin: 0 0 3rem 0;
+    font-size: 1.8rem;
+    margin: 0 0 2rem 0;
     position: relative;
 
     span {
       position: absolute;
       left: 0;
-      font-size: 20px;
+      font-size: 16px;
       color: black;
 
       @media screen and (max-width: 800px) {
@@ -21,10 +21,28 @@
     }
   }
 
+  .strategic-sponsor {
+    h5 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 250px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
   .sponsor-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    margin-top: 40px;
 
     @media screen and (min-width: 800px) {
       grid-template-columns: repeat(4, 1fr);

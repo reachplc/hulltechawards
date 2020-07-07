@@ -23,3 +23,31 @@
     color: #fff;
   }
 }
+
+.btn-white {
+  text-decoration: none;
+  margin: 40px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  border-width: 3px;
+  border-style: solid;
+  // border-image: linear-gradient(360deg, #e82681 0%, #ee5b04 100%);
+  border-image-slice: 1;
+  padding: 10px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.1rem;
+  background: transparent;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-family: rigid-square, sans-serif;
+  width: 200px;
+
+  &:hover {
+    background: linear-gradient(360deg, #e82681 0%, #ee5b04 100%);
+    color: #fff;
+  }
+}

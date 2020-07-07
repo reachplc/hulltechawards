@@ -1,11 +1,21 @@
 .page.about {
+  #modal-ready {
+    margin-top: 30px;
+
+    p {
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+
   .techweek {
     display: flex;
     justify-content: space-between;
 
     .logo {
       width: 450px;
-      margin-top: 60px;
+      margin-top: 100px;
+      transform: translateX(-3%);
     }
 
     .image {
