@@ -1,13 +1,19 @@
 <div class="footer-sponsors">
   <div class="container">
     <h4 class="title">2020 Sponsors</h4>
-    <div class="strategic-sponsor">
-      <h5>Strategic Sponsor</h5>
-      <a class="sponsor" target="_blank" href="/sponsors/gb-recruitment/">
-        <img src="/wp-content/uploads/2020/02/GB-Recruitment-Logo-02@4x-2.png" alt="gb recruitment logo" />
-      </a>
-    </div>
-    <div class="sponsor-grid">
+        <div class="sponsor-grid">
+      <div class="sponsor">
+        <h5>Headline Sponsor</h5>
+          <a href="https://reachplc.com" target="_blank">
+            <img src="/wp-content/uploads/2020/07/reach-yellow-crop.png" alt="">
+          </a>
+        </div>
+        <div class="sponsor">
+          <h5>In Partnership with</h5>
+            <a href="https://techexpohumber.com/" target="_blank">
+              <img src="/wp-content/uploads/2020/07/tech-week-logo.png" alt="">
+            </a>
+          </div>
       @php
         $args = array(
           'post_type'=> 'sponsors',
@@ -23,9 +29,12 @@
           @php
             $link = get_the_permalink();
           @endphp
-            <a class="sponsor" href="{{$link}}" target="_blank">
+          <div class="sponsor">
+          <h5>Category Sponsor </h5>
+            <a href="{{$link}}" target="_blank">
               {{the_post_thumbnail()}}
             </a>
+          </div>
           @endif
         @endwhile
       @endif

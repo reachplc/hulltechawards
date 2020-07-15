@@ -1,11 +1,11 @@
 .footer-sponsors {
-  margin: 5rem 0;
+  margin: 3rem 0;
 
-  h4.title {
+  h4 {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.8rem;
-    margin: 0 0 2rem 0;
+    margin: 0 0 3rem 0;
     position: relative;
 
     span {
@@ -21,28 +21,12 @@
     }
   }
 
-  .strategic-sponsor {
-    h5 {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 1rem;
-      margin: 0;
-      margin-bottom: 10px;
-    }
-
-    img {
-      width: 250px;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
   .sponsor-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-top: 40px;
+    // margin-bottom: 10px;
 
     @media screen and (min-width: 800px) {
       grid-template-columns: repeat(4, 1fr);
@@ -54,9 +38,18 @@
 
     .sponsor {
       img {
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
+        width: 100%;
+        height: 80px;
+        object-fit: contain;
+        justify-content: center;
+      }
+
+      h5 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin: 0 0 0.5rem 0;
+        position: relative;
       }
     }
   }

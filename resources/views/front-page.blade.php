@@ -7,10 +7,10 @@
     <div class="logo" id="anim-logo">
       <!-- @php (include App\svg_path('images/logo.svg')) @endphp -->
     </div>
-      <h2>The Region's Leading<br> Tech Awards Event</h2>
+      <h2>The Region's Leading<br> Tech Awards</h2>
       <h3>In Partnership with:</h3>
         <div class="hero__sponsor">
-          <img src="http://www.techawardshumber.com/wp-content/uploads/2020/03/gb-recuitment.png" alt="">
+          <img src="wp-content/uploads/2020/07/tech-week-logo.png" alt="">
         </div>
       <div class="keydates-center">
       @php

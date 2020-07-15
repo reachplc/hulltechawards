@@ -41,7 +41,7 @@
     transition: height 1.5s ease;
 
     &__sponsor {
-      filter: invert(1);
+      filter: brightness(0) invert(1);
       text-align: center;
 
       img {
