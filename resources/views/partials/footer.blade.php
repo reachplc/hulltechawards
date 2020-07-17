@@ -25,17 +25,15 @@
 
       @if($sponsor_query->have_posts())
         @while($sponsor_query->have_posts()) @php $sponsor_query->the_post(); @endphp
-        @if(get_the_title() !== 'GB Recruitment')
           @php
             $link = get_the_permalink();
           @endphp
           <div class="sponsor">
           <h5>Category Sponsor </h5>
-            <a href="{{$link}}" target="_blank">
+            <a href="{{$link}}">
               {{the_post_thumbnail()}}
             </a>
           </div>
-          @endif
         @endwhile
       @endif
     </div>

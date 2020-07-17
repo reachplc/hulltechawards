@@ -6,6 +6,10 @@
     margin-top: 0;
   }
 
+  h1 {
+    line-height: 1;
+  }
+
   .intro {
     display: flex;
   }
@@ -17,14 +21,15 @@
     margin-top: 50px;
 
     img {
-      width: 250px;
+      width: 280px;
       height: auto;
       margin: 0 auto;
       display: block;
+      margin-bottom: 20px;
 
       @media screen and (min-width: 1000px) {
         flex-direction: row;
-        width: 360px;
+        width: 300px;
       }
     }
 

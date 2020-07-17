@@ -1,6 +1,7 @@
 .page.about {
   #modal-ready {
     margin-top: 30px;
+    margin-bottom: 20px;
 
     p {
       margin: 0 auto;
@@ -30,24 +31,55 @@
   }
 
   .keydates {
+    margin-top: 60px;
+
     .dates {
-      display: flex;
+      display: block;
       justify-content: space-between;
       margin-bottom: $spacer;
+
+      @media screen and (min-width: 1000px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $spacer;
+      }
 
       .date {
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 25%;
-        border-right: 1px dashed $secondary;
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px dashed $secondary;
+
+        @media screen and (min-width: 1000px) {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          width: 25%;
+          border-right: 1px dashed $secondary;
+          padding: 0 15px;
+          border-bottom: none;
+        }
 
         &:last-of-type {
           border-right: none;
+          border-bottom: none;
+
+          @media screen and (min-width: 1000px) {
+            border-right: none;
+          }
+        }
+
+        &:first-of-type {
+          padding-top: 0;
         }
 
         h4 {
           margin: 0;
+          // padding-left: 10px;
+          // padding-right: 10px;
+          font-size: 20px;
         }
       }
     }
